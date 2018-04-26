@@ -148,13 +148,22 @@ header a {
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 0 auto;
-    width: 1024px;
+    width: 80%;
 }
 
 .post {
     position: relative;
-    width: 240px;
     margin-bottom: 14px;
+    width: 45%;
+}
+
+@media only screen and (min-width: 768px) {
+    .posts {
+        width: 1024px;
+    }
+    .post {
+        width: 240px
+    }
 }
 
 .post__image {
