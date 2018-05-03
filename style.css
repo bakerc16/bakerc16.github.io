@@ -257,7 +257,6 @@ header a {
 
 .spec__list {
     position: absolute;
-    padding-top: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -270,9 +269,39 @@ header a {
 
 @media only screen and (min-width: 600px) {
     .spec__list {
-        top: 195px;
+        top: 50px;
         right: 50px;
         width: calc(38.5% - 40px);
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .spec__list {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    .spec__list {
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .spec__list {
+        padding-top: 10px
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .spec__list {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .spec__list {
+        top: 195;
     }
 }
 
