@@ -257,6 +257,7 @@ header a {
 
 .spec__list {
     position: absolute;
+    padding-top: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -282,12 +283,34 @@ ul li {
 .spec__head {
     padding-right: 100px;
     text-align: left;
-    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .spec__head {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .spec__head {
+        font-size: 25px;
+    }
 }
 
 .spec__info {
     text-align: right;
-    font-size: 20px
+}
+
+@media only screen and (max-width: 600px) {
+    .spec__info {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .spec__info {
+        font-size: 20px;
+    }
 }
 
 .spec__starting {
@@ -295,9 +318,20 @@ ul li {
     font-size: 16px;
 }
 
-.spec__prise {
+.spec__price {
     font-weight: bold;
-    font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .spec__price {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .spec__price {
+        font-size: 40px;
+    }
 }
 
 .post__specs {
@@ -315,9 +349,12 @@ ul li {
 
 @media only screen and (max-width: 600px) {
     .top__image {
-        left: 50px;
+        left: 60px;
         top: 50px;
         width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
