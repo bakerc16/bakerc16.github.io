@@ -231,6 +231,14 @@ header a {
     }
 }
 
+#sort-btn {
+    border: none;
+    background: #1E76DC;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 /*
 * Recent Posts Styles
  */
