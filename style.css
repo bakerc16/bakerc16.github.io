@@ -256,52 +256,42 @@ header a {
 }
 
 .spec__list {
-    position: absolute;
-}
-
-@media only screen and (max-width: 600px) {
-    .spec__list {
-        top: 150px;
-        left: 0px;
-        width: 85%;
-    }
+    /* position: absolute; */
+    padding-top: 0;
+    width: 85%;
 }
 
 @media only screen and (min-width: 600px) {
     .spec__list {
-        top: 50px;
+        position: absolute;
+        top: 65px;
         right: 50px;
-        width: calc(38.5% - 40px);
+        width: calc(46.5% - 40px);
     }
 }
 
-@media only screen and (max-width: 350px) {
+/*@media only screen and (min-width: 350px) {
+    .spec__list {
+        padding-top: 10px;
+    }
+} */
+
+/* @media only screen and (max-width: 400px) {
+    .spec__list {
+        padding-top: 10px
+    }
+} */
+
+@media only screen and (min-width: 400px) {
     .spec__list {
         padding-top: 0px;
     }
 }
 
-@media only screen and (min-width: 350px) {
-    .spec__list {
-        padding-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .spec__list {
-        padding-top: 10px
-    }
-}
-
-@media only screen and (min-width: 400px) {
-    .spec__list {
-        padding-top: 30px;
-    }
-}
-
 @media only screen and (min-width: 1200px) {
     .spec__list {
-        top: 195;
+        top: 195px;
+        width: calc(40% - 40px);
     }
 }
 
@@ -390,8 +380,8 @@ ul li {
 @media only screen and (min-width: 600px) {
     .top__image {
         top: 100px;
-        left: 50px;
-        width: 65%;
+        left: 25px;
+        width: 50%;
     }
 }
 
@@ -510,39 +500,6 @@ ul li {
     top: 0;
     left: 0;
 }
-
-/*
- * Header Post Page
- */
-
-/* .header--post {
-    align-items: center;
-    background: transparent;
-    opacity: 0.85;
-    display: flex;
-    height: 50px;
-}
-
-.header_post {
-    background: transparent;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-}
-
-.header--post a {
-    color: #ffffff;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.header--post a+a {
-    margin-left: 20px;
-}
-
-.header--post {
-    margin: 5px;
-} */
 
 /*
  * About Page
