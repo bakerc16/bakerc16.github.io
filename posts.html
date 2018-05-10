@@ -20,6 +20,14 @@
     <h1 class="head__title">Posts</h1>
 
     <button id="sort-btn" data-sort-value="original-order">Click Me To Sort</button>
+
+    <div class="filters">
+        <button class="filter-btn" data-filter-value="Audi">Audi</button>
+        <button class="filter-btn" data-filter-value="Ferrari">Ferrari</button>
+        <button class="filter-btn" data-filter-value="Lamborghini">Lamborghini</button>
+        <button class="filter-btn" data-filter-value="Ford">Ford</button>
+        <button class="filter-btn" data-filter-value="Chevrolet">Chevrolet</button>
+    </div>
     <!-- <button id="sort-btn" data-sort-value="post__title">Name</button>
     <button id="sort-btn" data-sort-value="post__image">Image</button> -->
     <section id="posts" class="posts">
@@ -137,7 +145,12 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
         var elem = document.getElementById('posts');
-        console.log(elem)
+        var filters = [...document.querySelectorAll('.filter-btn')];
+
+        filters.forEach(function (button) {
+            button.addEventListener("click", filter)
+        })
+
         var iso = new Isotope(elem, {
             // options
             itemSelector: '.post',
@@ -169,8 +182,12 @@
             sorted = !sorted;
         }
 
+        function filter(e) {
+            console.log(e.target); //.data("filterValue"))
+        }
+
         var btn = document.getElementById("sort-btn");
-        btn.addEventListener("click", sort);
+        btn.addEventListener("click", filter);
     </script>
 </body>
 
