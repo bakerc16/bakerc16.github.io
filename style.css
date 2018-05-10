@@ -158,17 +158,12 @@ header a {
 
 .head__title {
     color: #1E76DC;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
     .head__title {
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .head__title {
-        padding-left: 25px;
+        margin: 5px;
     }
 }
 
@@ -231,16 +226,64 @@ header a {
     }
 }
 
-#sort-btn {
+.filter-btn {
+    border: none;
+    background: #1E76DC;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .filter-btn {
+        padding: 0.25rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .filer-btn {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+.filters {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.filter-title {
+    color: #1E76DC;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .filter-title {
+        font-size: 1rem;
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .filter-title {
+        font-size: 1.25rem;
+    }
+}
+
+/*#sort-btn {
     border: none;
     background: #1E76DC;
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
-}
+}*/
 
 /*
-* Recent Posts Styles
+ * Recent Posts Styles
  */
 
 .post--recent:first-of-type {
@@ -264,7 +307,6 @@ header a {
 }
 
 .spec__list {
-    /* position: absolute; */
     padding-top: 0;
     width: 85%;
 }
@@ -277,18 +319,6 @@ header a {
         width: calc(46.5% - 40px);
     }
 }
-
-/*@media only screen and (min-width: 350px) {
-    .spec__list {
-        padding-top: 10px;
-    }
-} */
-
-/* @media only screen and (max-width: 400px) {
-    .spec__list {
-        padding-top: 10px
-    }
-} */
 
 @media only screen and (min-width: 400px) {
     .spec__list {
@@ -515,18 +545,7 @@ ul li {
 
 .about__title {
     color: #1E76DC;
-}
-
-@media only screen and (max-width: 600px) {
-    .about__title {
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .about__title {
-        padding-left: 25px;
-    }
+    text-align: center;
 }
 
 .the__blog {

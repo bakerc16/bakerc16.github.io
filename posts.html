@@ -19,17 +19,17 @@
     </header>
     <h1 class="head__title">Posts</h1>
 
-    <button id="sort-btn" data-sort-value="original-order">Click Me To Sort</button>
+    <!-- <button id="sort-btn" data-sort-value="original-order"></button> -->
 
     <div class="filters">
+        <p class="filter-title"> Filter</p>
+        <button class="filter-btn" data-filter-value="all">All</button>
         <button class="filter-btn" data-filter-value="Audi">Audi</button>
         <button class="filter-btn" data-filter-value="Ferrari">Ferrari</button>
         <button class="filter-btn" data-filter-value="Lamborghini">Lamborghini</button>
         <button class="filter-btn" data-filter-value="Ford">Ford</button>
-        <button class="filter-btn" data-filter-value="Chevrolet">Chevrolet</button>
+        <button class="filter-btn" data-filter-value="Chevy">Chevrolet</button>
     </div>
-    <!-- <button id="sort-btn" data-sort-value="post__title">Name</button>
-    <button id="sort-btn" data-sort-value="post__image">Image</button> -->
     <section id="posts" class="posts">
         <div class="post post__hero" data-model="Audi">
             <a href="post.html" title="Audi RS5 Review">
@@ -43,7 +43,7 @@
                 <h4 class=" post__herotitle ">Ferrari 488 GTB</h4>
             </a>
         </div>
-        <div class="post " data-model="Lambo">
+        <div class="post " data-model="Lamborghini">
             <a href="post.html" title="Post TopCar.com">
                 <img class="post__image" src="img/aventador-sv-roadster-facebook-og.jpg">
                 <h4 class="post__title ">Lamborghini Aventador</h4>
@@ -69,14 +69,14 @@
         </div>
         <div class="post " data-model="Ford">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/1.jpg">
-                <h4 class="post__title ">Mustang GT</h4>
+                <img class="post__image" src="img/ford-gt.jpg">
+                <h4 class="post__title ">Ford GT</h4>
             </a>
         </div>
-        <div class="post " data-model="Lambo">
+        <div class="post " data-model="Lamborghini">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/aventador-sv-roadster-facebook-og.jpg">
-                <h4 class="post__title ">Lamborghini Aventador</h4>
+                <img class="post__image" src="img/lambo-huracan.jpg">
+                <h4 class="post__title ">Lamborghini Huracan</h4>
             </a>
         </div>
         <div class="post " data-model="Chevy">
@@ -103,16 +103,16 @@
                 <h4 class="post__title ">Corvette ZR1</h4>
             </a>
         </div>
-        <div class="post " data-model="Lambo">
+        <div class="post " data-model="Lamborghini">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/aventador-sv-roadster-facebook-og.jpg">
-                <h4 class="post__title ">Lamborghini Aventador</h4>
+                <img class="post__image" src="img/lambo_urus.jpg">
+                <h4 class="post__title ">Lamborghini Urus</h4>
             </a>
         </div>
         <div class="post " data-model="Ford">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/1.jpg">
-                <h4 class="post__title ">Mustang GT</h4>
+                <img class="post__image" src="img/shelby-gt350r.jpg">
+                <h4 class="post__title "> Mustang Shelby GT350</h4>
             </a>
         </div>
         <div class="post " data-model="Chevy">
@@ -129,14 +129,14 @@
         </div>
         <div class="post " data-model="Ford">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/1.jpg">
-                <h4 class="post__title ">Mustang GT</h4>
+                <img class="post__image" src="img/ford-raptor.jpg">
+                <h4 class="post__title "> Ford Raptor</h4>
             </a>
         </div>
-        <div class="post " data-model="Lambo">
+        <div class="post " data-model="Lamborghini">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/aventador-sv-roadster-facebook-og.jpg">
-                <h4 class="post__title ">Lamborghini Aventador</h4>
+                <img class="post__image" src="img/veneno-roadster.jpg">
+                <h4 class="post__title ">Lamborghini Veneno</h4>
             </a>
         </div>
 
@@ -177,12 +177,49 @@
             sorted = !sorted;
         }
 
-        function filter(e) {
-            console.log(e.target); //.data("filterValue"))
+        var iso = new Isotope(elem, {
+            // options
+            itemSelector: '.post',
+            layoutMode: 'fitRows',
+        });
+
+        var filterModel;
+        var filterFns = {
+            model: function (itemElem) {
+                return filterModel == itemElem.dataset.model;
+            },
+            all: function (itemElem) {
+                return true
+            }
         }
 
+        function filter(e) {
+            filterModel = this.dataset.filterValue;
+            // console.log(filterModel); //.data("filterValue"))
+
+            // only work with buttons
+            // if (!matchesSelector(event.target, 'data-model')) {
+            //     return;
+            // }
+            // var filterValue = event.target.getAttribute('data-model');
+            // use matching filter function
+
+            var filterValue;
+
+            if ("all" == filterModel) {
+                filterValue = filterFns['all'];
+            } else {
+                filterValue = filterFns['model'];
+            }
+            // || filterValue;
+            iso.arrange({
+                filter: filterValue
+            });
+        };
+
         var btn = document.getElementById("sort-btn");
-        btn.addEventListener("click", filter);
+        btn.addEventListener("click", sort);
+        // btn.addEventListener("click", filter);
     </script>
 </body>
 
