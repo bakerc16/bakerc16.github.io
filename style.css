@@ -119,10 +119,18 @@ header a {
  * Post Page Hero
  */
 
-.post__hero {
+.post__hero1 {
     position: relative;
     width: 495px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.post__hero2 {
+    position: relative;
+    width: 495px;
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
 
 .post__heroimage {
@@ -181,7 +189,7 @@ header a {
 
 .post {
     position: relative;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     width: 45%;
 }
 
@@ -190,7 +198,15 @@ header a {
         width: 1024px;
     }
     .post {
-        width: 240px
+        width: 240px;
+        margin-right: 15px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .post {
+        margin-right: 5px;
+        width: 120px;
     }
 }
 
@@ -290,8 +306,32 @@ header a {
     width: 495px;
 }
 
+@media only screen and (max-width: 600px) {
+    .post__hero1 {
+        width: 255px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .post__hero1 {
+        width: 495px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .post__hero2 {
+        width: 255px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .post__hero2 {
+        width: 495px;
+    }
+}
+
 /*
- * Post Page
+ * Post Page (Audi RS5)
  */
 
 .spec__list li {
@@ -540,6 +580,504 @@ ul li {
 }
 
 /*
+ * Post Page (Ferrari 488 GTB)
+ */
+
+.ferrari488__list li {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+    margin-bottom: 1px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.ferrari488__list li value {
+    text-align: right;
+}
+
+.ferrari488__list {
+    padding-top: 0;
+    width: 85%;
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrari488__list {
+        position: absolute;
+        top: 65px;
+        right: 50px;
+        width: calc(46.5% - 40px);
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .ferrari488__list {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ferrari488__list {
+        top: 195px;
+        width: calc(40% - 40px);
+    }
+}
+
+ul li {
+    list-style: none;
+}
+
+.ferrari488__head {
+    padding-right: 100px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .ferrari488__head {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrari488__head {
+        font-size: 25px;
+    }
+}
+
+.ferrari488__info {
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .ferrari488__info {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrari488__info {
+        font-size: 20px;
+    }
+}
+
+.ferrari488__starting {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.ferrari488__price {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .ferrari488__price {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrari488__price {
+        font-size: 40px;
+    }
+}
+
+.ferrari488__specs {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #ffffff
+}
+
+.ferrari488__image {
+    height: auto;
+    z-index: 2;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .ferrari488__image {
+        left: 60px;
+        top: 50px;
+        width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrari488__image {
+        top: 100px;
+        left: 25px;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ferrari488__image {
+        top: 195px;
+        left: 50px;
+        width: calc(58.5% - 50px);
+    }
+}
+
+.car__image {
+    height: auto;
+    width: 100%;
+    z-index: -1;
+    display: block;
+}
+
+.car__title {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e76dc+0,1e76dc+100&1+26,0+100 */
+    background: -moz-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e76dc', endColorstr='#001e76dc', GradientType=0);
+    /* IE6-9 */
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .car__title {
+        font-size: 20px;
+        padding: 3rem 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .car__title {
+        font-size: 50px;
+        padding: 4rem 0px;
+    }
+}
+
+.ferrari488__header {
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+}
+
+.post-page h2 {
+    color: #ffffff;
+    text-align: center;
+    /* padding: 3rem 0; */
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e76dc+0,1e76dc+100&1+26,0+100 */
+    background: -moz-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 118, 220, 1) 5%, rgba(30, 118, 220, 1) 5%, rgba(30, 118, 220, 0) 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e76dc', endColorstr='#001e76dc', GradientType=0);
+    /* IE6-9 */
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-page h2 {
+        font-size: 18px;
+        padding: 1rem 0px;
+    }
+    @media only screen and (orientation: landscape) {
+        .post-page h2 {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (orientation: portrait) {
+        .post-page h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .post-page h2 {
+        font-size: 30px;
+        padding: 2rem 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .post-page h2 {
+        font-size: 40px;
+        padding: 3rem 0px;
+    }
+}
+
+.ferrari488__specs {
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/*
+ * Post Page (Ferrari Portofino)
+ */
+
+.ferrariporto__list li {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+    margin-bottom: 1px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.ferrariporto__list li value {
+    text-align: right;
+}
+
+.ferrariporto__list {
+    padding-top: 0;
+    width: 85%;
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrariporto__list {
+        position: absolute;
+        top: 65px;
+        right: 50px;
+        width: calc(46.5% - 40px);
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .ferrariporto__list {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ferrariporto__list {
+        top: 195px;
+        width: calc(40% - 40px);
+    }
+}
+
+ul li {
+    list-style: none;
+}
+
+.ferrariporto__head {
+    padding-right: 100px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .ferrariporto__head {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrari488__head {
+        font-size: 25px;
+    }
+}
+
+.ferrariporto__info {
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .ferrariporto__info {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrariporto__info {
+        font-size: 20px;
+    }
+}
+
+.ferrariporto__starting {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.ferrariporto__price {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .ferrariporto__price {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrariporto__price {
+        font-size: 40px;
+    }
+}
+
+.ferrariporto__specs {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #ffffff
+}
+
+.ferrariporto__image {
+    height: auto;
+    z-index: 2;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .ferrariporto__image {
+        left: 60px;
+        top: 50px;
+        width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ferrariporto__image {
+        top: 100px;
+        left: 25px;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ferrariporto__image {
+        top: 195px;
+        left: 50px;
+        width: calc(58.5% - 50px);
+    }
+}
+
+.car__image {
+    height: auto;
+    width: 100%;
+    z-index: -1;
+    display: block;
+}
+
+.car__title {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e76dc+0,1e76dc+100&1+26,0+100 */
+    background: -moz-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e76dc', endColorstr='#001e76dc', GradientType=0);
+    /* IE6-9 */
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .car__title {
+        font-size: 20px;
+        padding: 3rem 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .car__title {
+        font-size: 50px;
+        padding: 4rem 0px;
+    }
+}
+
+.ferrariporto__header {
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+}
+
+.post-page h2 {
+    color: #ffffff;
+    text-align: center;
+    /* padding: 3rem 0; */
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e76dc+0,1e76dc+100&1+26,0+100 */
+    background: -moz-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 118, 220, 1) 5%, rgba(30, 118, 220, 1) 5%, rgba(30, 118, 220, 0) 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e76dc', endColorstr='#001e76dc', GradientType=0);
+    /* IE6-9 */
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-page h2 {
+        font-size: 18px;
+        padding: 1rem 0px;
+    }
+    @media only screen and (orientation: landscape) {
+        .post-page h2 {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (orientation: portrait) {
+        .post-page h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .post-page h2 {
+        font-size: 30px;
+        padding: 2rem 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .post-page h2 {
+        font-size: 40px;
+        padding: 3rem 0px;
+    }
+}
+
+.ferrariporto__specs {
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/*
  * About Page
  */
 
@@ -562,4 +1100,74 @@ ul li {
 
 .author__text {
     padding-left: 25px;
+}
+
+/*
+ * Top Button
+ */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #1E76DC;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.75;
+}
+
+@media only screen and (max-width: 600px) {
+    #myBtn {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+#myBtn:hover {
+    background-color: #CACACA;
+}
+
+/*
+ * Scroll Bar
+ */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1E76DC;
+}
+
+/*
+ * Image Zoom
+ */
+
+.post:hover {
+    transform: scale(1.1);
+    z-index: 999999999;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

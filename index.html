@@ -34,8 +34,8 @@
     <h3 class="recent__header">Recent Posts</h3>
     <div class="posts posts--recent">
       <div class="post post--recent">
-        <a href="post.html" title="Audi RS5 Review">
-          <img class="post__image" src="img/driven-ferrari-488gtb-superJumbo.jpg">
+        <a href="post_ferrari488.html" title="Ferrari 488 GTB Review">
+          <img class="post__image" src="img/ferrari-488-gtb-hero1.jpg">
           <h4 class=" post__title ">Ferrari 488 GTB
           </h4>
         </a>
@@ -66,8 +66,8 @@
       </div>
       <div class="post post--recent ">
         <a href="post.html" title="Post TopCar.com">
-          <img class="post__image" src="img/2018-Chevrolet-Camaro-ZL1-1LE-front-three-quarter-in-motion-04.jpg">
-          <h4 class="post__title ">Camero ZL1</h4>
+          <img class="post__image" src="img/ferrari-laferrari.jpg">
+          <h4 class="post__title ">Ferrari LaFerrari</h4>
         </a>
       </div>
       <div class="post post--recent ">
@@ -78,6 +78,30 @@
       </div>
     </div>
   </section>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
 </body>
 
 </html>

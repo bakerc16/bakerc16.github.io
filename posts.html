@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <header class="header--blue">
         <a href="/" title="Home TopCar.com">
             <img src="img/car-icon-white.png" style="width:40px;height:40"> </a>
@@ -31,15 +32,16 @@
         <button class="filter-btn" data-filter-value="Chevy">Chevrolet</button>
     </div>
     <section id="posts" class="posts">
-        <div class="post post__hero" data-model="Audi">
+        <!-- <div class="zoom"> -->
+        <div class="post post__hero1" data-model="Audi">
             <a href="post.html" title="Audi RS5 Review">
                 <img class="post__heroimage" src="img/Sports_Car_With_Seats_Front_View-512.jpg">
                 <h4 class=" post__herotitle ">Audi RS5</h4>
             </a>
         </div>
-        <div class="post post__hero" data-model="Ferrari">
-            <a href="post.html" title="Post TopCar.com">
-                <img class="post__heroimage" src="img/driven-ferrari-488gtb-superJumbo.jpg">
+        <div class="post post__hero2" data-model="Ferrari">
+            <a href="post_ferrari488.html" title="Post TopCar.com">
+                <img class="post__heroimage" src="img/ferrari-488-gtb-hero1.jpg">
                 <h4 class=" post__herotitle ">Ferrari 488 GTB</h4>
             </a>
         </div>
@@ -55,10 +57,10 @@
                 <h4 class="post__title ">Mustang GT</h4>
             </a>
         </div>
-        <div class="post " data-model="Chevy">
+        <div class="post " data-model="Ferrari">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/2018-Chevrolet-Camaro-ZL1-1LE-front-three-quarter-in-motion-04.jpg">
-                <h4 class="post__title ">Camero ZL1</h4>
+                <img class="post__image" src="img/ferrari-laferrari.jpg">
+                <h4 class="post__title ">Ferrari LaFerrari</h4>
             </a>
         </div>
         <div class="post " data-model="Chevy">
@@ -81,26 +83,26 @@
         </div>
         <div class="post " data-model="Chevy">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/the-fastest-most-powerful-production-corvette-ever-the-755-horsepower-2019-zr1-720x720.jpg">
-                <h4 class="post__title ">Corvette ZR1</h4>
-            </a>
-        </div>
-        <div class="post " data-model="Chevy">
-            <a href="post.html" title="Post TopCar.com">
                 <img class="post__image" src="img/2018-Chevrolet-Camaro-ZL1-1LE-front-three-quarter-in-motion-04.jpg">
-                <h4 class="post__title ">Camero ZL1</h4>
+                <h4 class="post__title ">Camaro ZL1</h4>
+            </a>
+        </div>
+        <div class="post " data-model="Audi">
+            <a href="post.html" title="Post TopCar.com">
+                <img class="post__image" src="img/audi_tt.jpg">
+                <h4 class="post__title ">Audi TT</h4>
+            </a>
+        </div>
+        <div class="post " data-model="Audi">
+            <a href="post.html" title="Post TopCar.com">
+                <img class="post__image" src="img/audi-r8.jpg">
+                <h4 class="post__title ">Audi R8</h4>
             </a>
         </div>
         <div class="post " data-model="Chevy">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/2018-Chevrolet-Camaro-ZL1-1LE-front-three-quarter-in-motion-04.jpg">
-                <h4 class="post__title ">Camero ZL1</h4>
-            </a>
-        </div>
-        <div class="post " data-model="Chevy">
-            <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/the-fastest-most-powerful-production-corvette-ever-the-755-horsepower-2019-zr1-720x720.jpg">
-                <h4 class="post__title ">Corvette ZR1</h4>
+                <img class="post__image" src="img/corvette-c7.jpg">
+                <h4 class="post__title ">Corvette C7</h4>
             </a>
         </div>
         <div class="post " data-model="Lamborghini">
@@ -117,14 +119,14 @@
         </div>
         <div class="post " data-model="Chevy">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/the-fastest-most-powerful-production-corvette-ever-the-755-horsepower-2019-zr1-720x720.jpg">
-                <h4 class="post__title ">Corvette ZR1</h4>
+                <img class="post__image" src="img/Corvette-Stingray.jpg">
+                <h4 class="post__title ">Chevrolet Stingray</h4>
             </a>
         </div>
-        <div class="post " data-model="Chevy">
+        <div class="post " data-model="Ferrari">
             <a href="post.html" title="Post TopCar.com">
-                <img class="post__image" src="img/2018-Chevrolet-Camaro-ZL1-1LE-front-three-quarter-in-motion-04.jpg">
-                <h4 class="post__title ">Camero ZL1</h4>
+                <img class="post__image" src="img/ferrari-portofino.jpeg">
+                <h4 class="post__title ">Ferrari Portofino</h4>
             </a>
         </div>
         <div class="post " data-model="Ford">
@@ -140,7 +142,33 @@
             </a>
         </div>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     </section>
+
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
