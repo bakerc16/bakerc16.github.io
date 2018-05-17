@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TopCar - Lamborghini Huracan Review</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="post-page">
+    <header>
+        <a href="/" title="Home TopCar.com">
+            <img src="img/car-icon-white.png" style="width:40px; height:40px"> </a>
+        <a href="posts.html" title="Posts TopCar.com">Posts</a>
+        <a href="about.html" title="About TopCar.com">About</a>
+    </header>
+    <div class="car">
+        <div class="car__header">
+            <h1 class="car__title ">Lamborghini Huracan Review</h1>
+            <img class="car__image" src="img/huracan-hero3.jpg" />
+        </div>
+        <div class="post__specs">
+            <h2 class=" ex__title ">Lamborghini Huracan Key Specifications</h2>
+            <img class="car__specs" src="img/huracan_hero2.jpg" />
+            <img class="top__image" src="img/huracan_hero2.jpg" />
+
+            <div class="spec__list">
+                <ul>
+                    <li>
+                        <div class="ferrari488__starting"> Starting at...
+                        </div>
+                        <div class="ferrari488__price"> $223,500 </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Engine
+                        </div>
+                        <div class="ferrari488__info"> Atmospheric 5.2 Liter V10 </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Top Speed/Power
+                        </div>
+                        <div class="ferrari488__info"> 320 km/h @ 580hp </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Acceleration
+                        </div>
+                        <div class="ferrari488__info"> 0-100 km/h 3.4 seconds </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Transmission
+                        </div>
+                        <div class="ferrari488__info"> 7-Speed RWD Automatic </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Max Torque </div>
+                        <div class="ferrari488__info"> 395lb ft @ 6500 rpm </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+</body>
+
+</html>

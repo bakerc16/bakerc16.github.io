@@ -1,7 +1,7 @@
 
 --------------- Post Page CSS ---------------
 
-.carname__list li {
+.spec__list li {
     border-bottom: 1px solid #ffffff;
     box-shadow: 0 1px 0 0 #ffffff;
     margin-bottom: 1px;
@@ -9,17 +9,17 @@
     padding: 15px 0;
 }
 
-.carname__list li value {
+.spec__list li value {
     text-align: right;
 }
 
-.carname__list {
+.spec__list {
     padding-top: 0;
     width: 85%;
 }
 
 @media only screen and (min-width: 600px) {
-    .carname__list {
+    .spec__list {
         position: absolute;
         top: 65px;
         right: 50px;
@@ -28,13 +28,13 @@
 }
 
 @media only screen and (min-width: 400px) {
-    .carname__list {
+    .spec__list {
         padding-top: 0px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .carname__list {
+    .spec__list {
         top: 195px;
         width: calc(40% - 40px);
     }
@@ -72,7 +72,7 @@ ul li {
 }
 
 @media only screen and (min-width: 600px) {
-    .   carname__info {
+    .carname__info {
         font-size: 20px;
     }
 }
@@ -98,21 +98,21 @@ ul li {
     }
 }
 
-.carname__specs {
+.post__specs {
     position: relative;
     top: 0;
     left: 0;
     color: #ffffff
 }
 
-.carname__image {
+.top__image {
     height: auto;
     z-index: 2;
     position: absolute;
 }
 
 @media only screen and (max-width: 600px) {
-    .carname__image {
+    .top__image {
         left: 60px;
         top: 50px;
         width: 65%;
@@ -123,7 +123,7 @@ ul li {
 }
 
 @media only screen and (min-width: 600px) {
-    .carname__image {
+    .top__image {
         top: 100px;
         left: 25px;
         width: 50%;
@@ -131,7 +131,7 @@ ul li {
 }
 
 @media only screen and (min-width: 1200px) {
-    .carname__image {
+    .top__image {
         top: 195px;
         left: 50px;
         width: calc(58.5% - 50px);
@@ -179,7 +179,7 @@ ul li {
     }
 }
 
-.carname__header {
+.car__header {
     color: #ffffff;
     width: 100%;
     position: relative;
@@ -237,7 +237,7 @@ ul li {
     }
 }
 
-.carname__specs {
+.car__specs {
     width: 100%;
     height: auto;
     filter: blur(5px);
@@ -255,7 +255,7 @@ ul li {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TopCar - Ferrari 488 GTB Review</title>
+    <title>TopCar - Car Name Review</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -268,16 +268,16 @@ ul li {
         <a href="about.html" title="About TopCar.com">About</a>
     </header>
     <div class="car">
-        <div class="ferrari488__header">
-            <h1 class="car__title ">Ferrari 488 GTB Review</h1>
+        <div class="car__header">
+            <h1 class="car__title "> Car Name Review</h1>
             <img class="car__image" src="img/ferrari-488-gtb-hero1.jpg" />
         </div>
-        <div class="ferrari488__specs">
-            <h2 class=" ferrari488__title ">Ferrari 488 GTB Key Specifications</h2>
-            <img class="ferrari488__specs" src="img/ferrari_488_gtb_hero2.jpg" />
-            <img class="ferrari488__image" src="img/ferrari_488_gtb_hero2.jpg" />
+        <div class="post__specs">
+            <h2 class=" ex__title "> Car Name Key Specifications</h2>
+            <img class="car__specs" src="img/ferrari_488_gtb_hero2.jpg" />
+            <img class="top__image" src="img/ferrari_488_gtb_hero2.jpg" />
 
-            <div class="carname__list">
+            <div class="spec__list">
                 <ul>
                     <li>
                         <div class="carname__starting"> Starting at...

@@ -583,7 +583,7 @@ ul li {
  * Post Page (Ferrari 488 GTB)
  */
 
-.ferrari488__list li {
+.spec__list li {
     border-bottom: 1px solid #ffffff;
     box-shadow: 0 1px 0 0 #ffffff;
     margin-bottom: 1px;
@@ -591,17 +591,17 @@ ul li {
     padding: 15px 0;
 }
 
-.ferrari488__list li value {
+.spec__list li value {
     text-align: right;
 }
 
-.ferrari488__list {
+.spec__list {
     padding-top: 0;
     width: 85%;
 }
 
 @media only screen and (min-width: 600px) {
-    .ferrari488__list {
+    .spec__list {
         position: absolute;
         top: 65px;
         right: 50px;
@@ -610,13 +610,13 @@ ul li {
 }
 
 @media only screen and (min-width: 400px) {
-    .ferrari488__list {
+    .spec__list {
         padding-top: 0px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .ferrari488__list {
+    .spec__list {
         top: 195px;
         width: calc(40% - 40px);
     }
@@ -680,21 +680,21 @@ ul li {
     }
 }
 
-.ferrari488__specs {
+.post__specs {
     position: relative;
     top: 0;
     left: 0;
     color: #ffffff
 }
 
-.ferrari488__image {
+.top__image {
     height: auto;
     z-index: 2;
     position: absolute;
 }
 
 @media only screen and (max-width: 600px) {
-    .ferrari488__image {
+    .top__image {
         left: 60px;
         top: 50px;
         width: 65%;
@@ -705,7 +705,7 @@ ul li {
 }
 
 @media only screen and (min-width: 600px) {
-    .ferrari488__image {
+    .top__image {
         top: 100px;
         left: 25px;
         width: 50%;
@@ -713,7 +713,7 @@ ul li {
 }
 
 @media only screen and (min-width: 1200px) {
-    .ferrari488__image {
+    .top__image {
         top: 195px;
         left: 50px;
         width: calc(58.5% - 50px);
@@ -761,7 +761,7 @@ ul li {
     }
 }
 
-.ferrari488__header {
+.car__header {
     color: #ffffff;
     width: 100%;
     position: relative;
@@ -819,7 +819,7 @@ ul li {
     }
 }
 
-.ferrari488__specs {
+.car__specs {
     width: 100%;
     height: auto;
     filter: blur(5px);
@@ -1010,7 +1010,7 @@ ul li {
     }
 }
 
-.ferrariporto__header {
+.car__header {
     color: #ffffff;
     width: 100%;
     position: relative;
@@ -1069,6 +1069,255 @@ ul li {
 }
 
 .ferrariporto__specs {
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/*
+ * Post Page (Lamborghini Huracan)
+ */
+
+.spec__list li {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+    margin-bottom: 1px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.spec__list li value {
+    text-align: right;
+}
+
+.spec__list {
+    padding-top: 0;
+    width: 85%;
+}
+
+@media only screen and (min-width: 600px) {
+    .spec__list {
+        position: absolute;
+        top: 65px;
+        right: 50px;
+        width: calc(46.5% - 40px);
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .spec__list {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .spec__list {
+        top: 195px;
+        width: calc(40% - 40px);
+    }
+}
+
+ul li {
+    list-style: none;
+}
+
+.huracan__head {
+    padding-right: 100px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .huracan__head {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .huracan__head {
+        font-size: 25px;
+    }
+}
+
+.huracan__info {
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .huracan__info {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .huracan__info {
+        font-size: 20px;
+    }
+}
+
+.huracan__starting {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.huracan__price {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .huracan__price {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .huracan__price {
+        font-size: 40px;
+    }
+}
+
+.post__specs {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #ffffff
+}
+
+.top__image {
+    height: auto;
+    z-index: 2;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .top__image {
+        left: 60px;
+        top: 50px;
+        width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .top__image {
+        top: 100px;
+        left: 25px;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .top__image {
+        top: 195px;
+        left: 50px;
+        width: calc(58.5% - 50px);
+    }
+}
+
+.car__image {
+    height: auto;
+    width: 100%;
+    z-index: -1;
+    display: block;
+}
+
+.car__title {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e76dc+0,1e76dc+100&1+26,0+100 */
+    background: -moz-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e76dc', endColorstr='#001e76dc', GradientType=0);
+    /* IE6-9 */
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .car__title {
+        font-size: 20px;
+        padding: 3rem 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .car__title {
+        font-size: 50px;
+        padding: 4rem 0px;
+    }
+}
+
+.car__header {
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+}
+
+.post-page h2 {
+    color: #ffffff;
+    text-align: center;
+    /* padding: 3rem 0; */
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e76dc+0,1e76dc+100&1+26,0+100 */
+    background: -moz-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 118, 220, 1) 5%, rgba(30, 118, 220, 1) 5%, rgba(30, 118, 220, 0) 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e76dc', endColorstr='#001e76dc', GradientType=0);
+    /* IE6-9 */
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-page h2 {
+        font-size: 18px;
+        padding: 1rem 0px;
+    }
+    @media only screen and (orientation: landscape) {
+        .post-page h2 {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (orientation: portrait) {
+        .post-page h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .post-page h2 {
+        font-size: 30px;
+        padding: 2rem 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .post-page h2 {
+        font-size: 40px;
+        padding: 3rem 0px;
+    }
+}
+
+.car__specs {
     width: 100%;
     height: auto;
     filter: blur(5px);
