@@ -140,6 +140,7 @@ header a {
     line-height: 0;
     object-fit: cover;
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .post__herotitle {
@@ -217,6 +218,7 @@ header a {
     line-height: 0;
     object-fit: cover;
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .post__title {
@@ -249,6 +251,8 @@ header a {
     font-size: 1rem;
     font-weight: lighter;
     color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
@@ -259,7 +263,7 @@ header a {
 }
 
 @media only screen and (min-width: 600px) {
-    .filer-btn {
+    .filter-btn {
         padding: 0.5rem;
         font-size: 1rem;
     }
@@ -442,6 +446,7 @@ ul li {
     height: auto;
     z-index: 2;
     position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
@@ -516,6 +521,10 @@ ul li {
     color: #ffffff;
     width: 100%;
     position: relative;
+}
+
+.post-page {
+    background: #1E76DC;
 }
 
 .post-page h2 {
@@ -691,6 +700,7 @@ ul li {
     height: auto;
     z-index: 2;
     position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1189,6 +1199,7 @@ ul li {
     height: auto;
     z-index: 2;
     position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1438,6 +1449,7 @@ ul li {
     height: auto;
     z-index: 2;
     position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1590,6 +1602,7 @@ ul li {
 
 .blog__text {
     padding-left: 25px;
+    padding-right: 25px;
 }
 
 .the__author {
@@ -1598,6 +1611,31 @@ ul li {
 
 .author__text {
     padding-left: 25px;
+    padding-right: 25px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    width: 15%;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Add some padding inside the card container */
+
+.container {
+    padding: 2px 15px;
+    margin: 0;
 }
 
 /*

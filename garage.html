@@ -38,6 +38,7 @@
             background: #eee;
             font-size: 18px;
             transition: 0.2s;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
             /* make the list items unselectable */
             -webkit-user-select: none;
@@ -122,6 +123,7 @@
             padding: 10px;
             float: left;
             font-size: 16px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         @media only screen and (max-width: 600px) {
@@ -142,6 +144,7 @@
             font-size: 16px;
             cursor: pointer;
             transition: 0.3s;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         @media only screen and (max-width: 600px) {
@@ -173,6 +176,7 @@
     </div>
 
     <ul id="myUL">
+        <li> Ferrari 488 GTB</li>
     </ul>
 
     <script>
@@ -212,7 +216,7 @@
             var t = document.createTextNode(inputValue);
             li.appendChild(t);
             if (inputValue === '') {
-                alert("You must write something!");
+                alert("You forgot to write something!");
             } else {
                 document.getElementById("myUL").appendChild(li);
             }
