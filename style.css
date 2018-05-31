@@ -65,6 +65,7 @@ header a {
 .header--blue {
     background: rgb(30, 118, 220, .85);
     position: static;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*
