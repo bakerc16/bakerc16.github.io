@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Python Key Logger</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/cb_logo1.png"/>
+</head>
+
+<body class="post-page">
+    <header>
+        <a href="index.html" title="Home">
+            <img class="home__logo" src="img/cb_logo1.png" style="width:40px;height:40px"> </a>
+            <!-- <img class="home__logo" src="img/car-icon-white.png" style="width:40px;height:40px"> </a> -->
+        <a href="work.html" title="">Work/Projects</a>
+        <a href="https://github.com/bakerc16" title="Work/Projects">Github</a>
+        <a href="contact.html" title="Contact Cole">Contact</a>
+        <a href="about.html" title="About Cole">About</a>
+    </header>
+
+    <div class="car">
+        <div class="car__header">
+            <h1 class="car__title ">Python Key Logger</h1>
+            <img class="car__image" src="img/key_logger_2.PNG" />
+        </div>
+        <div class="post__specs">
+            <h2 class=" ex__title ">Key Logger Features</h2>
+            <img class="car__specs" src="img/html_code2.jpg" />
+            <img class="top__image" src="img/key_logger_6.PNG" />
+
+            <div class="spec__list">
+                <ul>
+                    <li>
+                        <div class="ferrari488__head"> Code Snippet
+                        </div>
+                        <div class="ferrari488__info"> To the left, is a snippet of the code used to create this python key logger. </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Objective
+                        </div>
+                        <div class="ferrari488__info"> The objective of this key logger was to gain a better understanding of how they
+                            work, how they are used in attacks and how to defend against them. </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> How This Key Logger Works
+                        </div>
+                        <div class="ferrari488__info"> This key logger uses the Python Keyboard library to capture a key as it is pressed.
+                            As a pressed key is captured, they are sent to a text document along with the exact time the key is pressed.
+                            The key logger has a kill command (kil) that when typed one after the other will stop the key logger and break
+                        the key capturing loop.</div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Github </div>
+                        <div class="ferrari488__info"> The full key logger, including all versions is avaliable on Github. <a href="https://github.com/bakerc16/security_tools">Click to view key logger on Github</a> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+</body>
+
+</html>

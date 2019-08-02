@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - HTML and CSS Showcase</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/cb_logo1.png"/>
+</head>
+
+<body class="post-page">
+    <header>
+        <a href="index.html" title="Home">
+            <img class="home__logo" src="img/cb_logo1.png" style="width:40px;height:40px"> </a>
+            <!-- <img class="home__logo" src="img/car-icon-white.png" style="width:40px;height:40px"> </a> -->
+        <a href="work.html" title="">Work/Projects</a>
+        <a href="https://github.com/bakerc16" title="Work/Projects">Github</a>
+        <a href="contact.html" title="Contact Cole">Contact</a>
+        <a href="about.html" title="About Cole">About</a>
+    </header>
+
+    <div class="car">
+        <div class="car__header">
+            <h1 class="car__title ">Showcase of HTML and CSS Skills</h1>
+            <img class="car__image" src="img/audi-r8-hero1.jpg" />
+        </div>
+        <div class="post__specs">
+            <h2 class=" ex__title ">Website Purpose</h2>
+            <img class="car__specs" src="img/html_code4.jpg" />
+            <img class="top__image" src="img/topcar2.PNG" />
+
+            <div class="spec__list">
+                <ul>
+                    <li>
+                        <div class="ferrari488__head"> Purpose
+                        </div>
+                        <div class="ferrari488__info"> This website was created as a project for a high school co-op to showcase my knowledge with HTML and CSS. </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> HTML
+                        </div>
+                        <div class="ferrari488__info"> My knowledge of HTML was greatly increased by creating this website. These skills then contributated to the creation of this portfolio.  </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Top Speed/Power
+                        </div>
+                        <div class="ferrari488__info"> 330 km/h @ 602hp </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Acceleration
+                        </div>
+                        <div class="ferrari488__info"> 0-100 km/h 3.3 seconds </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Transmission
+                        </div>
+                        <div class="ferrari488__info"> 7-Speed S Tronic </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Max Torque </div>
+                        <div class="ferrari488__info"> 413lb ft @ 6500 rpm </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+</body>
+
+</html>

@@ -11,7 +11,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #CACACA;
+    /* background-color: #CACACA; */
+    /* background-color: #ffffff; */
+    background-color: #262e2e;
+    /* background-color: #f1f7f7; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,6 +31,7 @@ body {
 }
 
 .recent__header {
+    /* color: #0f509b; */
     color: #1E76DC;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,7 +43,8 @@ body {
 
 header {
     align-items: center;
-    background: transparent;
+    /* background: transparent; */
+    background: #1e76dccf;
     position: absolute;
     display: flex;
     height: 50px;
@@ -198,6 +203,7 @@ header a {
 @media only screen and (min-width: 768px) {
     .posts {
         width: 1024px;
+        padding-bottom: 15px;
     }
     .post {
         width: 240px;
@@ -524,7 +530,7 @@ ul li {
     position: relative;
 }
 
-.post-page {
+.post-page-light-theme {
     background: #1E76DC;
 }
 
@@ -653,8 +659,12 @@ ul li {
     }
 }
 
+.ferrari488__info a {
+    color: #1E76DC;
+}
+
 .ferrari488__info {
-    text-align: right;
+    text-align: left;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1598,45 +1608,26 @@ ul li {
 }
 
 .the__blog {
-    padding-left: 25px;
+    padding-left: 200px;
+    color: green;
 }
 
 .blog__text {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: white;
 }
 
 .the__author {
-    padding-left: 25px;
+    padding-left: 200px;
+    color: green;
+
 }
 
 .author__text {
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.3s;
-    width: 15%;
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    top: 0;
-}
-
-/* On mouse-over, add a deeper shadow */
-
-.card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* Add some padding inside the card container */
-
-.container {
-    padding: 2px 15px;
-    margin: 0;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: white;
 }
 
 /*
@@ -1668,7 +1659,7 @@ ul li {
 }
 
 #myBtn:hover {
-    background-color: #CACACA;
+    background-color: rgb(1, 60, 128);
 }
 
 /*
@@ -1708,3 +1699,135 @@ ul li {
     z-index: 999999999;
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+.top__image:hover {
+    transform: scale(1.1);
+    z-index: 999999999;
+}
+
+/* 
+ * PDFs 
+ */
+
+.resume {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.vpn {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.ips {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.post-page-dark-theme {
+    background: #262e2e;
+}
+
+.post-page-dark-theme h2 {
+    color: #ffffff;
+    text-align: center;
+    /* padding: 3rem 0; */
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e76dc+0,1e76dc+100&1+26,0+100 */
+    background: -moz-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 118, 220, 1) 0%, rgba(30, 118, 220, 1) 26%, rgba(30, 118, 220, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 118, 220, 1) 5%, rgba(30, 118, 220, 1) 5%, rgba(30, 118, 220, 0) 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e76dc', endColorstr='#001e76dc', GradientType=0);
+    /* IE6-9 */
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-page-dark-theme h2 {
+        font-size: 18px;
+        padding: 1rem 0px;
+    }
+    @media only screen and (orientation: landscape) {
+        .post-page-dark-theme h2 {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (orientation: portrait) {
+        .post-page-dark-theme h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .post-page-dark-theme h2 {
+        font-size: 30px;
+        padding: 2rem 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .post-page-dark-theme h2 {
+        font-size: 40px;
+        padding: 3rem 0px;
+    }
+}
+
+.home__logo {
+    margin-left: 10px;
+}
+
+.pdf_des {
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*
+ * Social Media Buttons
+ */
+ .fa {
+    padding: 18px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Linkedin */
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    margin-left: 10px;
+  }
+
+    /* Github */
+  .fa-github {
+    background: #37991e;
+    color: white;
+    margin-left: 10px;
+  }
