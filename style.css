@@ -1831,3 +1831,28 @@ ul li {
     color: white;
     margin-left: 10px;
   }
+
+/* Page Selector */
+/* Page Bar links */
+.page-bar a {
+    color: white;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  /* Style the active/current link */
+  .page-bar a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .page-bar a:hover:not(.active) {background-color: rgb(167, 166, 166);}
+
+  .page-bar{
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
