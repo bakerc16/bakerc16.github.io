@@ -44,10 +44,53 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Pen Testing</p>
-          <p>Programming</p>
-          <p>Vulnerability Assesments</p>
-          <p>Web Development</p>
+
+          <button class="accordion">Pen Testing</button>
+          <div class="panel">
+            <h6>Ability to multitask very well and able to use time management skills. And able to keep the work environment clean and organized.</h6>
+          </div>
+
+          <button class="accordion">Programming</button>
+          <div class="panel">
+            <h6>A above average level of coding knowledge in multiple languages such as C++, C, Python, Java, CSS and HTML. </h6>
+          </div>
+
+          <button class="accordion">Vulnerability Assesments</button>
+          <div class="panel">
+            <h6>Ability to multitask very well and able to use time management skills. And able to keep the work environment clean and organized.</h6>
+          </div>
+
+          <button class="accordion">Web Development</button>
+          <div class="panel">
+            <h6>Ability to multitask very well and able to use time management skills. And able to keep the work environment clean and organized.</h6>
+          </div>
+
+          <button class="accordion">Organizational Skills</button>
+          <div class="panel">
+            <h6>Ability to multitask very well and able to use time management skills. And able to keep the work environment clean and organized.</h6>
+          </div>
+
+          <button class="accordion">Learning Skills</button>
+          <div class="panel">
+            <h6>Quick learner and always ready to learn something new and able to build upon what is learned to further knowledge and skills.</h6>
+          </div>
+
+          <button class="accordion">Problem Solving Skills</button>
+          <div class="panel">
+            <h6>Able to to find multiple solutions to various difficult problems, and able to work with others to test different solutions to find the best answer to the problem.</h6>
+          </div>
+
+          <button class="accordion">Teamwork Skills</button>
+          <div class="panel">
+            <h6>Comfortable working in a team environment with new or familiar members.  As well as noticing valuable knowledge and skills that can be used to benefit the team.</h6>
+          </div>
+
+          <button class="accordion">Cyber Security Skills</button>
+          <div class="panel">
+            <h6>Able to solve problems and scenarios using or with computers. Working knowledge of security based tools such as NESSUS, Nmap and Metasploit. 
+              Able to perform tasks such as vulnerability tests and reports, risk assessments, as well as setting VPNS, Firewalls, and Endpoints. </h6>
+          </div>
+
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Programming Languages</b></p>
@@ -64,6 +107,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
           </div>
           <br>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Accomplishments</b></p>
+          <p>Challenge Nova Scotia 2018</p>          
+          <p> <a href="cybersec_challenge.html">CyberSCI Halifax 2020 - Winning Team</a></p>
+          <br>
+
         </div>
       </div><br>
     </div>
@@ -128,6 +177,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <a href="https://www.linkedin.com/in/cole-baker-2000" class="fa fa-linkedin"></a>
 <a href="https://github.com/bakerc16/security_tools" class="fa fa-github"></a>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
 
 </body>
 </html>

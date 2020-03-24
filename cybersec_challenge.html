@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Cyber Security Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/cb_logo1.png"/>
+</head>
+
+<body class="post-page">
+    <header>
+        <a href="index.html" title="Home">
+            <img class="home__logo" src="img/cb_logo1.png" style="width:40px;height:40px"> </a>
+        <a href="work.html" title="">Work/Projects</a>
+        <a href="https://github.com/bakerc16" title="Work/Projects">Github</a>
+        <a href="about.html" title="About Cole">About</a>
+    </header>
+
+    <div class="car">
+        <div class="car__header">
+            <h1 class="car__title ">Cyber Security Challenge Winning Team</h1>
+        </div>
+        <div class="post__specs">
+            <img class="car__specs" src="img/html_code2.jpg" />
+            <img class="top__image" src="img/cyber_challenge3.jpg" />
+
+            <div class="spec__list">
+                <ul>
+                    <li>
+                        <div class="ferrari488__head"> CyberSCI Halifax Winning Team
+                        </div>
+                        <div class="ferrari488__info"> On March 14th 2020, I participated in the CyberSCI Halifax challenge, and work
+                            with my create team, we were able to take home first place for NSCC. </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> Objective
+                        </div>
+                        <div class="ferrari488__info"> The objective of this challenge was for a team of four students to navigate our way through a virtual enterprise
+                            that was setup for us. We were to simulate a real life hack by reaching certain points and gaining points. </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> What's next?
+                        </div>
+                        <div class="ferrari488__info"> Thanks to our first place win, we will now be competing in the national finals in Ottawa
+                            sometime this year. </div>
+                    </li>
+                    <li>
+                        <div class="ferrari488__head"> CyberSCI </div>
+                        <div class="ferrari488__info"> You can view more information about the CyberSCI on their website. <a href="http://cybersecuritychallenge.ca/cybersci-halifax/">Click to view CyberSCI website</a> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+</body>
+
+</html>
