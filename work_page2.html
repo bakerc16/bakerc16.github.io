@@ -227,14 +227,6 @@
 
         function filter(e) {
             filterModel = this.dataset.filterValue;
-            // console.log(filterModel); //.data("filterValue"))
-
-            // only work with buttons
-            // if (!matchesSelector(event.target, 'data-model')) {
-            //     return;
-            // }
-            // var filterValue = event.target.getAttribute('data-model');
-            // use matching filter function
 
             var filterValue;
 
@@ -243,25 +235,19 @@
             } else {
                 filterValue = filterFns['model'];
             }
-            // || filterValue;
             iso.arrange({
                 filter: filterValue
             });
         };
 
         var btn = document.getElementById("sort-btn");
-        btn.addEventListener("click", sort);
-        // btn.addEventListener("click", filter);
+        // btn.addEventListener("click", sort);
     </script>
 
 <div class="page-bar">
     <a href="work.html">&laquo;</a>
     <a href="work.html">1</a>
-    <a class="active" href="#">2</a>
-    <!-- <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">5</a>
-    <a href="#">6</a> -->
+    <a class="active1" href="#">2</a>
     <a href="#">&raquo;</a>
   </div>
 

@@ -1843,13 +1843,13 @@ ul li {
   }
   
   /* Style the active/current link */
-  .page-bar a.active {
+  .page-bar a.active1 {
     background-color: dodgerblue;
     color: white;
   }
   
   /* Add a grey background color on mouse-over */
-  .page-bar a:hover:not(.active) {background-color: rgb(167, 166, 166);}
+  .page-bar a:hover:not(.active1) {background-color: rgb(167, 166, 166);}
 
   .page-bar{
       text-align: center;
@@ -1883,7 +1883,7 @@ ul li {
   }
 
   .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795';
     font-size: 13px;
     color: #777;
     float: right;
@@ -1891,5 +1891,5 @@ ul li {
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
   }
