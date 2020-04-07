@@ -2004,3 +2004,11 @@ ul li {
     text-align: center;
 }
 
+/* Challenge NS */
+#Challengens {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #Challengens:hover {opacity: 0.7;}

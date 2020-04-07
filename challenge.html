@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Challenge NS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/cb_logo1.png"/>
+
+</head>
+
+<body>
+    <header class="header--blue">
+        <a href="index.html" title="Home">
+            <img class="home__logo" src="img/cb_logo1.png" style="width:40px;height:40px"> </a>
+        <a href="work.html" title="">Work/Projects</a>
+        <a href="https://github.com/bakerc16" title="Work/Projects">Github</a>
+        <a href="about.html" title="About Cole">About</a>
+    </header>
+
+    <h1 class="about__title">Challenge Nova Scotia</h1>
+
+    <h2 class="pdf_des"> As part of enrollment at NSCC we were required to complete the WHMIS and OHS safety cources before start our cources.
+        
+    </h2>
+
+<img id="Challengens" src="img/challenge_ns.png" alt="Challenge Nova Scotia" style="width:100%;max-width:40%;margin-left: auto;
+margin-right: auto;display: block;padding-bottom: 50px;">
+
+<div id="myModal" class="modal">
+
+  <span class="close">&times;</span>
+
+  <img class="modal-content" id="img01">
+
+  <div id="caption"></div>
+
+</div>
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+            var modal = document.getElementById("myModal");
+
+            var img = document.getElementById("Challengens");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>
