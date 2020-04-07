@@ -1992,3 +1992,15 @@ ul li {
       width: 100%;
     }
   }
+
+.coming_title {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.coming_message {
+    color: white;
+    text-align: center;
+}
+
